@@ -1,0 +1,17 @@
+- hosts: all
+  tasks:
+    - name: mkdir '/var/log/sudo'
+      file:
+        path: "/var/log/sudo"
+        state: directory
+        owner: root
+        group: root
+        mode: '0755'
+    
+    - name: copy 'my_sudoers'
+      copy:
+        src: ./files/my_sudoers
+        dest: /etc/sudoers.d/my_sudoers
+        owner: root
+        group: root
+        mode: '0755'

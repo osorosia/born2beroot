@@ -1,9 +1,3 @@
-- name: My playbook
-  hosts: all
-  tasks:
-    - name: Leaving a mark
-      command: "touch /tmp/ansible_was_here"
-
 - name: apt install
   import_playbook: ./playbook/apt.yml
 
@@ -15,3 +9,6 @@
 
 - name: setting cron
   import_playbook: ./playbook/cron.yml
+
+- name: setting sudo
+  import_playbook: ./playbook/sudo.yml

@@ -16,3 +16,10 @@
         group: root
         mode: '0755'
 
+    - name: entry monitoring job
+      cron:
+        name: "monitoring job"
+        minute: "*/10"
+        disabled: yes
+        user: root
+        job: "bash /ft/monitoring.sh"

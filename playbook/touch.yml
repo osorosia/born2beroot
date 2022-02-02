@@ -1,6 +1,0 @@
-- name: exec touch
-  hosts: all
-  tasks:
-    - name: touch file
-      command: "touch /tmp/ansible_was_here_hoge"
-      
