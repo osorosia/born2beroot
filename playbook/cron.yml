@@ -1,0 +1,18 @@
+- hosts: all
+  tasks:
+    - name: mkdir '/ft'
+      file:
+        path: "/ft"
+        state: directory
+        owner: root
+        group: root
+        mode: '0755'
+
+    - name: copy monitoring.sh to '/ft'
+      copy:
+        src: ./files/monitoring.sh
+        dest: /ft/monitoring.sh
+        owner: root
+        group: root
+        mode: '0755'
+

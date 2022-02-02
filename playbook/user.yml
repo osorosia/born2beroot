@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+    - name: create 'rnishimo' user
+      user:
+        name: rnishimo
+        groups: sudo,user42
+        shell: /bin/bash
+        password: "{{ 'pass' | password_hash('sha512', 'salt_sample') }}"
+        # create_home: yes

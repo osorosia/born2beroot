@@ -1,0 +1,11 @@
+- hosts: all
+  tasks:
+    - name: update all packages
+      apt:
+        name: "*"
+        state: latest
+    
+    - name: install the package 'sysstat'
+      apt:
+        name: sysstat
+        update_cache: yes
