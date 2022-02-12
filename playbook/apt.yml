@@ -4,8 +4,13 @@
       apt:
         name: "*"
         state: latest
-    
+
     - name: install the package 'sysstat'
       apt:
         name: sysstat
+        update_cache: yes
+
+    - name: install the package 'ufw'
+      apt:
+        name: ufw
         update_cache: yes
