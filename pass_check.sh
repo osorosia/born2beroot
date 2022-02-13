@@ -8,7 +8,6 @@ check() {
   echo $password | pwscore $login
 }
 
-
 echo NG case
 check rnishimo 'Arupaka42'
 check rnishimo 'arupaka42tokyo'
@@ -21,7 +20,7 @@ check root 'ArupakaTokyo'
 check root 'AAAArupaka42Tokyo'
 check root 'root42Tokyo'
 
-
+echo
 echo OK case
 check rnishimo 'Arupaka42Tokyo'
 check rnishimo 'ARUPAKA42TOKYO'
