@@ -3,7 +3,7 @@
 # - before
 # apt update
 # apt install git
-# git clone <this-repository>
+# git clone https://github.com/osorosia/born2beroot.git
 
 # - after
 # crontab -u root -e
@@ -19,7 +19,6 @@ apt-get install \
     sudo \
     sysstat \
     ufw \
-
 
 # user, group
 adduser rnishimo sudo
