@@ -11,6 +11,7 @@
 
 # - check
 # ufw status
+# bash pass_check.sh
 
 # apt
 apt-get update
@@ -46,5 +47,8 @@ cat ./files/my_sudoers > /etc/sudoers.d/my_sudoers
 chmod 755 /etc/sudoers.d/my_sudoers
 
 # password
+cat ./files/login.defs > /etc/login.defs
+chmod 644 /etc/login.defs
+
 cat ./files/pwquality.conf > /etc/security/pwquality.conf
 chmod 644 /etc/security/pwquality.conf
