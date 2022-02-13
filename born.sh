@@ -14,8 +14,9 @@
 
 # apt
 apt-get update
-apt-get install \
+apt-get install -y \
     libpam-pwquality \
+    libpwquality-tools \
     sudo \
     sysstat \
     ufw \
@@ -39,4 +40,11 @@ mkdir /fd
 cat ./files/monitoring.sh > /fd/monitoring.sh 
 chmod -R 755 /ft
 
+# sudo
+mkdir -p /var/log/sudo
+cat ./files/my_sudoers > /etc/sudoers.d/my_sudoers
+chmod 755 /etc/sudoers.d/my_sudoers
 
+# password
+cat ./files/pwquality.conf > /etc/security/pwquality.conf
+chmod 644 /etc/security/pwquality.conf
