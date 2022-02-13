@@ -1,4 +1,5 @@
 - hosts: all
+  become: yes
   tasks:
     - name: create 'user42' group
       group:

@@ -1,4 +1,5 @@
 - hosts: all
+  become: yes
   tasks:
     - name: update all packages
       apt:
@@ -13,4 +14,9 @@
     - name: install the package 'ufw'
       apt:
         name: ufw
+        update_cache: yes
+
+    - name: install the package 'libpam-pwquality'
+      apt:
+        name: libpam-pwquality
         update_cache: yes

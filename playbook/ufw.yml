@@ -1,0 +1,18 @@
+- hosts: all
+  become: yes
+  tasks:
+    - name: ufw
+      ufw:
+        rule: allow
+        port: '4242'
+        proto: tcp
+        delete: yes
+
+- hosts: all
+  tasks:
+    - name: ufw
+      ufw:
+        rule: allow
+        port: '22'
+        proto: tcp
+        delete: yes

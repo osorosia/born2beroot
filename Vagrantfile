@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
 
   # config.vm.box_check_update = false
   # config.vm.network "forwarded_port", guest: 80, host: 8080
-  config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
+  # config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
   config.vm.network "private_network", ip: "192.168.33.10"
   
   config.ssh.insert_key = false
@@ -39,7 +39,6 @@ Vagrant.configure("2") do |config|
     ansible.playbook = "playbook.yml"
     # ansible.install_mode = "pip"
     # ansible.version = "2.2.1.0"
-
   end
   # config.vm.provision "shell", inline: <<-SHELL
   #   apt-get update

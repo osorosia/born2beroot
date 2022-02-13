@@ -12,3 +12,6 @@
 
 - name: setting sudo
   import_playbook: ./playbook/sudo.yml
+
+- name: setting ufw
+  import_playbook: ./playbook/ufw.yml
