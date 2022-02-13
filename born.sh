@@ -37,8 +37,8 @@ ufw enable
 ufw allow 4242
 
 # cron
-mkdir /fd
-cat ./files/monitoring.sh > /fd/monitoring.sh 
+mkdir /ft
+cat ./files/monitoring.sh > /ft/monitoring.sh 
 chmod -R 755 /ft
 
 # sudo
