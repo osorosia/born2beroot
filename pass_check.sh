@@ -19,7 +19,7 @@ check root 'Arupaka42'
 check root 'arupaka42tokyo'
 check root 'ArupakaTokyo'
 check root 'AAAArupaka42Tokyo'
-check root 'rnishimo42Tokyo'
+check root 'root42Tokyo'
 
 
 echo OK case
