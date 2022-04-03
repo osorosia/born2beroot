@@ -4,6 +4,7 @@ Defaults	badpass_message="42tokyo: incorrect password"
 
 Defaults	log_input,log_output
 Defaults	iolog_dir="/var/log/sudo"
+Defaults  logfile="/var/log/sudo/log.txt"
 
 Defaults	requiretty
 
